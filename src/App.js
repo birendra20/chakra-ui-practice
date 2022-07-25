@@ -7,6 +7,7 @@ import ContainerT from "./components/ContainerT";
 import FlexT from "./components/FlexT";
 import GridT from "./components/GridT";
 import StylesAndGradient from "./components/StylesAndGradient";
+import Adding from "./HooksComponents/Adding";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <CenterT /> */}
       {/* <ContainerT /> */}
       {/* <FlexT /> */}
-      <GridT />
+      {/* <GridT /> */}
+      <Adding />
     </div>
   );
 }
