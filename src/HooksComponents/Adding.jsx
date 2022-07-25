@@ -49,6 +49,7 @@ const Adding = () => {
       <Flex direction={"column"}>
         <Box
           as="button"
+          my={"15"}
           mx={"auto"}
           width={150}
           height="100px"

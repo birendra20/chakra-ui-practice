@@ -8,6 +8,8 @@ import FlexT from "./components/FlexT";
 import GridT from "./components/GridT";
 import StylesAndGradient from "./components/StylesAndGradient";
 import Adding from "./HooksComponents/Adding";
+import FetchBook from "./HooksComponents/FetchBook";
+import MoveBoxUp from "./HooksComponents/MoveBoxUp";
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
       {/* <ContainerT /> */}
       {/* <FlexT /> */}
       {/* <GridT /> */}
-      <Adding />
+      {/* <Adding /> */}
+      {/* <MoveBoxUp /> */}
+      <FetchBook />
     </div>
   );
 }
