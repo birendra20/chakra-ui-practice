@@ -12,6 +12,7 @@ import {
   Button,
   Grid,
   Container,
+  SimpleGrid,
 } from "@chakra-ui/react";
 
 const FetchBook = () => {
@@ -39,40 +40,48 @@ const FetchBook = () => {
         </Button>
       </Center>
       <br />
-      <Grid templateColumns="repeat(2, 2fr)" ml="90px" gap={4}>
+      {/* both grid examples are correct */}
+      {/* <Grid templateColumns="repeat(2, 2fr)" ml="90px" gap={4}> */}/
+      <SimpleGrid columns={2} spacing={10} ml="90px">
         {books &&
           books.map((book, index) => {
             const cleanedDate = new Date(book.released).toDateString();
             const authors = book.authors.join(", ");
-            return (
-              <Box
-                key={index}
-                alignContent={"center"}
-                bg="purple"
-                w={"80%"}
-                color="white"
-              >
-                <Center display={"flex"} flexDirection="column">
-                  <Heading as={"h3"} size="md">
-                    Book {index + 1}
-                  </Heading>
-                  <Heading as={"h1"} size="md">
-                    {book.name}
-                  </Heading>
-                </Center>
-                <Box p={10}>
-                  <Text as="i">{authors}</Text>
-                  <br />
-                  <Text as="i">{book.numberOfPages} pages</Text>
-                  <br />
-                  <Text as="i">🏘{book.country}</Text>
-                  <br />
-                  <Text as="i">{cleanedDate}</Text>
+
+            if (index % 2 !== 0) {
+              return (
+                <Box
+                  key={index}
+                  alignContent={"center"}
+                  bg="purple"
+                  w={"80%"}
+                  color="white"
+                  mb={10}
+                  borderRadius="10"
+                >
+                  <Center display={"flex"} flexDirection="column">
+                    <Heading as={"h3"} size="md">
+                      Book {index + 1}
+                    </Heading>
+                    <Heading as={"h1"} size="md">
+                      {book.name}
+                    </Heading>
+                  </Center>
+                  <Box p={10}>
+                    <Text as="i">{authors}</Text>
+                    <br />
+                    <Text as="i">{book.numberOfPages} pages</Text>
+                    <br />
+                    <Text as="i">🏘{book.country}</Text>
+                    <br />
+                    <Text as="i">{cleanedDate}</Text>
+                  </Box>
                 </Box>
-              </Box>
-            );
+              );
+            }
           })}
-      </Grid>
+      </SimpleGrid>
+      {/* </Grid> */}
     </Box>
   );
 };

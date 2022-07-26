@@ -6,6 +6,8 @@ import CenterT from "./components/CenterT";
 import ContainerT from "./components/ContainerT";
 import FlexT from "./components/FlexT";
 import GridT from "./components/GridT";
+import SimpleGridT from "./components/SimpleGridT";
+import StackT from "./components/StackT";
 import StylesAndGradient from "./components/StylesAndGradient";
 import Adding from "./HooksComponents/Adding";
 import FetchBook from "./HooksComponents/FetchBook";
@@ -23,7 +25,9 @@ function App() {
       {/* <GridT /> */}
       {/* <Adding /> */}
       {/* <MoveBoxUp /> */}
-      <FetchBook />
+      {/* <FetchBook /> */}
+      {/* <SimpleGridT /> */}
+      <StackT />
     </div>
   );
 }
