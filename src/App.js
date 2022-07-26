@@ -10,8 +10,10 @@ import SimpleGridT from "./components/SimpleGridT";
 import StackT from "./components/StackT";
 import StylesAndGradient from "./components/StylesAndGradient";
 import Adding from "./HooksComponents/Adding";
+import BasicEffect from "./HooksComponents/BasicUseEffect";
 import FetchBook from "./HooksComponents/FetchBook";
 import MoveBoxUp from "./HooksComponents/MoveBoxUp";
+import CounterFnSetState from "./HooksComponents/State";
 
 function App() {
   return (
@@ -27,7 +29,9 @@ function App() {
       {/* <MoveBoxUp /> */}
       {/* <FetchBook /> */}
       {/* <SimpleGridT /> */}
-      <StackT />
+      {/* <StackT /> */}
+      {/* <CounterFnSetState /> */}
+      <BasicEffect />
     </div>
   );
 }
