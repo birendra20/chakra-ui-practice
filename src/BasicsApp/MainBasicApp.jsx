@@ -1,6 +1,7 @@
 import React from "react";
 import LiveClock from "./LiveClock";
 import Timer from "./Timer/Timer";
+import TodoApp from "./TodoApp";
 
 import { Grocery } from "./todoApp/Grocery";
 
@@ -10,7 +11,8 @@ const MainBasicApp = () => {
       {/* <Grocery /> */}
 
       {/* <Timer /> */}
-      <LiveClock />
+      {/* <LiveClock /> */}
+      <TodoApp />
     </div>
   );
 };
