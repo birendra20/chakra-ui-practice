@@ -1,4 +1,5 @@
 import React from "react";
+import BasicCalculator from "./BasicCalculator";
 import LiveClock from "./LiveClock";
 import Timer from "./Timer/Timer";
 import TodoApp from "./TodoApp";
@@ -12,7 +13,8 @@ const MainBasicApp = () => {
 
       {/* <Timer /> */}
       {/* <LiveClock /> */}
-      <TodoApp />
+      {/* <TodoApp /> */}
+      <BasicCalculator />
     </div>
   );
 };
