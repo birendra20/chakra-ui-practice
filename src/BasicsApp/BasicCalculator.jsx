@@ -16,10 +16,10 @@ const BasicCalculator = () => {
     setResult(eval(result).toString());
   };
   return (
-    <Box border={"2px solid black"} w="350px">
-      <Input placeholder="Basic usage" value={result} />
+    <Box w="285px" h="500px">
+      <Input placeholder="0" value={result} bg="blue.100" fontWeight={"bold"} />
 
-      <SimpleGrid columns={4} bg={"black"} color="white" m={0}>
+      <SimpleGrid columns={4} bg={"purple"} color="white" m={0}>
         <Input as={"button"} value="9" onClick={clickHandler}>
           9
         </Input>

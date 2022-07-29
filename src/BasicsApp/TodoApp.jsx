@@ -5,7 +5,6 @@ import { Box, AspectRatio, Button } from "@chakra-ui/react";
 const TodoApp = () => {
   const [text, setText] = useState("");
   const [task, setTask] = useState([]);
-  const inputElement = useRef();
 
   const handleAdd = (data) => {
     const payload = {
@@ -25,7 +24,6 @@ const TodoApp = () => {
       <div>
         <input
           style={{ border: "1px solid black" }}
-          ref={inputElement}
           type="text"
           value=""
           onChange={(e) => {

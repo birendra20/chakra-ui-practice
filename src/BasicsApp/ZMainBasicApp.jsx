@@ -5,6 +5,7 @@ import Timer from "./Timer/Timer";
 import TodoApp from "./TodoApp";
 
 import { Grocery } from "./todoApp/Grocery";
+import Adding from "./TwoNumber";
 
 const MainBasicApp = () => {
   return (
@@ -14,6 +15,7 @@ const MainBasicApp = () => {
       {/* <Timer /> */}
       {/* <LiveClock /> */}
       {/* <TodoApp /> */}
+      <Adding />
       <BasicCalculator />
     </div>
   );
