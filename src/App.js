@@ -7,8 +7,8 @@ import MainHooks from "./HooksComponents/ZMainHooks";
 function App() {
   return (
     <div className="App">
-      <MainBasicApp />
-      {/* <MainHooks /> */}
+      {/* <MainBasicApp /> */}
+      <MainHooks />
     </div>
   );
 }
