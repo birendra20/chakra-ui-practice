@@ -2,6 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { Box, Button, Input, Text, Center, Heading } from "@chakra-ui/react";
 
 const UseRefEg = () => {
+  // 1.Dom reference
+  //  2. useRef for storing the previous state
+  //  3.hold the mutable value prevent re-render of component
+
   const [name, setName] = useState("");
   const [counter, setCounter] = useState(0);
 
